@@ -35,9 +35,16 @@ function listNFTs () {
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-
+   console.log("Total NFTs minted: " + nftList.length);
+   return nftList.length;
 }
 
 // call your functions below this line
+mintNFT("The Swaggy Monkey", "Nitin", 900);
+mintNFT("The Sickly Dog", "Williams", 300000);
+mintNFT("The Deadly Whale", "Steffan", 50000);
+mintNFT("The Shy Possum", "Clarrisa", 7);
 
+listNFTs();
 
+getTotalSupply();
