@@ -27,7 +27,10 @@ function mintNFT (name, owner, value) {
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
-   
+   for (let i = 0; i < nftList.length; i++) {
+      let msg = "ID: " + nftList[i].id + "\nName: " + nftList[i].name + "\nOwner: " + nftList[i].owner + "\nValue: " + nftList[i].value + "\n";
+      console.log(msg);
+   }
 }
 
 // print the total number of NFTs we have minted to the console
