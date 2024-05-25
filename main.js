@@ -9,18 +9,25 @@ Assessment Requirements
 */
 
 // create a variable to hold your NFT's
+nftList = [];
 
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT () {
-
+function mintNFT (name, owner, value) {
+   let nftObj = {
+      id: nftList.length + 1,
+      name: name,
+      owner: owner,
+      value: value
+   };
+   nftList.push(nftObj);
 }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
-
+   
 }
 
 // print the total number of NFTs we have minted to the console
